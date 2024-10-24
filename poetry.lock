@@ -926,7 +926,7 @@ traitlets = "*"
 
 [[package]]
 name = "nakasvr"
-version = "0.0.0"
+version = "0.0.2+13.345bb73"
 description = "Connect a remote kernel with a local Spyder IDE"
 optional = false
 python-versions = ">=3.10,<4"
@@ -945,7 +945,7 @@ spyder-kernels = "*"
 type = "git"
 url = "https://github.com/Simon-McIntosh/nakasvr.git"
 reference = "HEAD"
-resolved_reference = "6272c8bf6bae794209371ce254d20ae33fdf2557"
+resolved_reference = "345bb737de2aaf393a53d62aefcb7ca91b1f504e"
 
 [[package]]
 name = "nest-asyncio"

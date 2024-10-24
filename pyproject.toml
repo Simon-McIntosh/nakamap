@@ -18,16 +18,14 @@ dependencies = [
 ]
 
 [build-system]
-requires = [
-  "poetry-core>=1.9",
-]
+requires = ["poetry-core>=1.9"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 version = "0.0.0"
 name = "nakamap"
-#authors = ["-"]
-#description = "-"
+description = "IMAS IDS generator scripts for JT-60SA"
+authors = ["Simon McIntosh <simon.mcintosh@iter.org>"]
 
 [tool.poetry-dynamic-versioning]
 enable = true
