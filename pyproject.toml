@@ -20,9 +20,8 @@ dependencies = [
 [build-system]
 requires = [
   "poetry-core>=1.9",
-  "poetry-dynamic-versioning>=1.4"
 ]
-build-backend = "poetry-dynamic-versioning"
+build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 version = "0.0.0"
