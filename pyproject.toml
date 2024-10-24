@@ -14,15 +14,25 @@ dependencies = [
     "seaborn (>=0.13.2,<0.14.0)",
     "xarray (>=2024.9.0,<2025.0.0)",
     "appdirs (>=1.4.4,<2.0.0)",
-    #"nakasvr @ git+https://github.com/Simon-McIntosh/nakasvr.git",
+    "nakasvr @ git+https://github.com/Simon-McIntosh/nakasvr.git",
 ]
 
 [build-system]
-requires = ["poetry-core>=1.9", "poetry-dynamic-versioning>=1.4"]
+requires = [
+  "poetry-core>=1.9",
+  "poetry-dynamic-versioning>=1.4"
+]
 build-backend = "poetry-dynamic-versioning"
 
 [tool.poetry]
-#name = "nakamap"
 version = "0.0.0"
-#authors = ["Simon McIntosh <simon.mcintosh@iter.org>"]
-#description = "IMAS IDS generator scripts for JT-60SA"
+name = "nakamap"
+#authors = ["-"]
+#description = "-"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+style = "semver"
+pattern = "^(?P<base>\\d+\\.\\d+\\.\\d+)(-?((?P<stage>[a-zA-Z]+)\\.?(?P<revision>\\d+)?))?"
+format = "{base}+{distance}.{commit}"
