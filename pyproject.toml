@@ -1,0 +1,28 @@
+[project]
+name = "nakamap"
+dynamic = ["version"]
+description = "IMAS IDS generator scripts for JT-60SA"
+authors = [
+    {name = "Simon McIntosh",email = "simon.mcintosh@iter.org"}
+]
+readme = "README.md"
+requires-python = ">=3.10,<4"
+dependencies = [
+    "numpy (>=2.1.2,<3.0.0)",
+    "scipy (>=1.14.1,<2.0.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "seaborn (>=0.13.2,<0.14.0)",
+    "xarray (>=2024.9.0,<2025.0.0)",
+    "appdirs (>=1.4.4,<2.0.0)",
+    #"nakasvr @ git+https://github.com/Simon-McIntosh/nakasvr.git",
+]
+
+[build-system]
+requires = ["poetry-core>=1.9", "poetry-dynamic-versioning>=1.4"]
+build-backend = "poetry-dynamic-versioning"
+
+[tool.poetry]
+#name = "nakamap"
+version = "0.0.0"
+#authors = ["Simon McIntosh <simon.mcintosh@iter.org>"]
+#description = "IMAS IDS generator scripts for JT-60SA"
