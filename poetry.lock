@@ -1885,4 +1885,4 @@ viz = ["matplotlib", "nc-time-axis", "seaborn"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<4"
-content-hash = "8c31f6146ffdd2e44040c12a9b57d67efebb1be8f20b68fab49dfcf87276218c"
+content-hash = "08013ff069d49905240a72619dade38c4bfdba2dc6a4ab8cc76fedf0d39c4cab"

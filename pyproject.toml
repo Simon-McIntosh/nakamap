@@ -17,15 +17,24 @@ dependencies = [
     "nakasvr @ git+https://github.com/Simon-McIntosh/nakasvr.git",
 ]
 
+#[project.optional-dependencies]
+#imas = ["imaspy @ git+https://git.iter.org/scm/imas/imaspy.git"]
+
+[[tool.poetry.source]]
+name = "iter"
+url = "https://pypi.iter.org/simple/"
+priority = "explicit"
+
 [build-system]
-requires = ["poetry-core>=1.9"]
-build-backend = "poetry.core.masonry.api"
+requires = [
+  "poetry-core @ git+https://github.com/radoering/poetry-core.git@pep621-support",
+  "poetry-dynamic-versioning>=1.4"
+]
+build-backend = "poetry_dynamic_versioning.backend"
 
 [tool.poetry]
-version = "0.0.0"
 name = "nakamap"
-description = "IMAS IDS generator scripts for JT-60SA"
-authors = ["Simon McIntosh <simon.mcintosh@iter.org>"]
+version = "0.0.0"
 
 [tool.poetry-dynamic-versioning]
 enable = true
